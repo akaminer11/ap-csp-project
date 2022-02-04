@@ -1,0 +1,19 @@
+help - translation.py
+----------------------------------
+
+SYNOPSIS
+    python translation.py [language] [word]
+
+DESCRIPTION
+    translate a single word from english to spanish, german or french
+
+ARGUMENTS
+    -s, --spanish : translate to spanish
+
+    -f, --french  : translate to french
+
+    -g, --german  : translate to german
+
+NOTE
+    This translator utilizes a wordlist. It may not be able to deal with slang
+    or regional words.`
