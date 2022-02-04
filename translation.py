@@ -18,12 +18,12 @@ def invalid_syntax():
 
 
 def invalid_lang():
-    print("##########################################\nFatal error: Invalid language. Printing help statement.\n#######################################\n")
+    print("#######################################################\nFatal error: Invalid language. Printing help statement.\n#######################################################\n")
     print_help()
 
 
 def word_not_found():
-    print("##############################\nError: Word not found in wordlist. Printing help statement.\n##########################################")
+    print("###########################################################\nError: Word not found in wordlist. Printing help statement.\n###########################################################")
     print_help()
 
 
