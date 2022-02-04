@@ -17,7 +17,7 @@ def parse(phrase):
 
 def main():
     with open("words.txt", "r") as w:
-    lines = w.readlines()
+        lines = w.readlines()
 
     words = {}
 
