@@ -15,7 +15,7 @@ def take_input():
     args = sys.argv
     if len(args) > 3:
         invalid_syntax()
-        break
+        return -1
 
 
 def parse(phrase):
@@ -38,7 +38,9 @@ def main():
         eng, langs = parse(phrase)
         words[eng] = langs
 
-    take_input()
+    word = take_input()
+    if word == -1:
+        return
 
 
 
