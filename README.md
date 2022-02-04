@@ -14,3 +14,8 @@ Function names make it pretty obvious what they do, and they have docstrings.
 Use -h or --help if to see all of the arguments. Translation.py is the main 
 file, use arguments on that one. Everything else is a tool to get the wordlist
 up and running.
+
+## Sources
+Original wordlist: https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-no-swears.txt
+
+Translation Library: google translator through deep-translator library
