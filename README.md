@@ -1,6 +1,7 @@
-# ap-csp-project
+# AP Computer Science Principles Final Project
 A very bad "translation tool" using python and literally zero reasonable 
-thinking.
+thinking. I whipped it up in basically a day. Getting the wordlist was the 
+hardest part.
 
 ## Description
 This is a tool that takes a wordlist of the 10000 most popular english words,
