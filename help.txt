@@ -3,6 +3,7 @@ help - translation.py
 
 SYNOPSIS
     python translation.py [language] [word]
+    python translation.py [-h or --help]
 
 DESCRIPTION
     translate a single word from english to spanish, german or french
