@@ -1,6 +1,15 @@
 #!/bin/python
 import sys
 
+# This is a tool that takes a pre-translated wordlist of the 10000 most popular english words, uses an external tool to translate those words, stores them in a file, and then
+# accesses them to translate the given word. It can translate from english into Spanish, German, or French.
+
+# Outside of this program, I pre-translated the word list using a tool I created. It is not actually used in this program, so it is not included.
+
+# Sources
+# Original wordlist (in english): https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-no-swears.txt
+
+# Translation Library: google translator through deep-translator library
 
 def print_help():
     with open("help.txt", "r") as helpfile:
@@ -60,10 +69,15 @@ def take_input(words):
 
 
 def translate(word, words, lang):
-    if word in words:
-        print(words[word][lang])
-    else:
-        word_not_found()
+    for w in words: 
+        if word == w[0]: 
+            print(w[1][lang]) 
+            return 0 
+    word_not_found()
+
+
+
+
 
 
 def parse(phrase):
@@ -82,10 +96,10 @@ def parse(phrase):
 def main():
     with open("words.txt", "r") as w:
         lines = w.readlines()
-    words = {}
+    words = []
     for phrase in lines:
         eng, langs = parse(phrase)
-        words[eng] = langs
+        words.append([eng, langs])
     take_input(words)
     
 
